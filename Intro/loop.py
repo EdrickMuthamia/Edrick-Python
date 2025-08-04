@@ -30,3 +30,13 @@ for i in range(10,2,-1):
 
    for i in range (0,1000,2):
     print("All even numbers",i)
+
+
+    fruits=["Apple","Banana","Orange","Mango"]
+    for fruit in fruits:
+       print(fruit)
+       
+
+    for i in range(0,3 ):
+       fruit=fruits[i]
+       print("Fruit is", fruit)  
