@@ -1,37 +1,35 @@
-# snake_case 
+# snake case
+# snake_case
+# indentation
+x=10 #Integer 
+print(x,type(x))
+pi=3.142  #Floating
+print(pi)
+print(type(pi))
+myName="Edrick" #String
+print(type(myName))
+print(myName)
+is_happy=True # python True/False js true/false
+print(is_happy)
+print(type(is_happy))
+no_value=None # None is the equivalent to Null in js
+print(no_value)
+print(type(no_value))
 
-X=1 #Integer
-print(X) # Print in python
-pi=3.142 #Floating 
-print(pi) # Print in python
-print(type(pi)) # Print type of pi in python
-myName="Edrick" # String
-print(myName) # Print in python
-print(type(myName)) # Print type of myName in python
-myName1='Edrick'# String
-print(myName1) # Print in python
-print(type(myName1)) # Print type of myName1 in python
-is_happy=True#python True/False
-print(is_happy) # Print in python
-print(type(is_happy)) # Print type of is_happy in python
+# Advanced Datatypes Bracket notation
+my_list=[10,10,"string",True,None,123,[]] # List<Array> my_list[0]
+print(my_list)
+print("type of my list",type(my_list))
+my_set={1,1,1,1,1,1,2,3,3,"Hello","Hello"} #Set(unique stuff only) and Array
+print(my_set)
+print("set",type(my_set))
+my_tuple=(1,3,4,5,"Apple") #tuple my_tuple[0]=Apple
+print(my_tuple)
+print("my_tuple",type(my_tuple))
+my_obj={"key":"value","age":23} #Dictionary Key<->value my_obj["key"].
+print(my_obj)
+print("my_obj",type(my_obj))
+# Print ALL Value: python print() >---< js<console.log> 
 
-no_value=None#none is the equivalent to Null in js
-print(no_value) # Print in python
-print(type(no_value)) # Print type of no_value in python
-
-# Advanced Data Types Bracket notation
-my_list=[1,2,3,4,True,None,[]] # List<Array>
-print(my_list) # Print in python
-print(my_list[0]) # Accessing first element in the list
-print(type(my_list)) # Print type of my_list in python
-my_set={1,2,3,4} # Set(unique stuff only ) and Array
-print(my_set) # Print in python
-print(type(my_set)) # Print type of my_set in python
-my_tuple=(1,2,3,4,"Apple") # Tuple my_tuple[4]=Apple
-print(my_tuple) # Print in python\
-print(type(my_tuple)) # Print type of my_tuple in python
-my_obj={"key":"value","age":23} # Dictionary (key:value pairs) my_obj["key"]
-print(my_obj) # Print in python
-print(type(my_obj)) # Print type of my_obj in python
-
-## Print All Value : python print() js<console.log>
+#PASS BY REF Mutable , PASS BY VALUE-->IMUATABLE
+#Array from a list is the mutability
