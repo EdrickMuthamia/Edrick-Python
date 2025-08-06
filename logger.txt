@@ -1,0 +1,4 @@
+function:counter time taken 14.637789249420166 
+function:counter time taken 12.745656490325928 
+function:counter time taken 0.0008492469787597656 
+function:counter time taken 11.557559490203857 
