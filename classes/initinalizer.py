@@ -2,11 +2,11 @@
 #initializer:constructor
 
 #Speical method in a class
-#initializer: method is called whenver the blueprint is used
+#initializer: method is called whenever the blueprint is used
 #To create an object
 #method function is inside a class
 
-#method your create you have to hhave thhe self: keyworkd
+#method your create you have to have the self: key worked
 class Human():
 
     def __init__(self,gender,name):
