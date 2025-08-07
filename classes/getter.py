@@ -23,27 +23,41 @@ class Human():
 
     def __init__(self,gender,name):
         print("The initializer wass called")
-        self.gender=gender
-        self.name=name
-        if self.gender=="Male":
-            self.ribs=24
-            self.curse="Suffer"
+        self._gender=gender
+        self._name=name
+        if self._gender=="Male":
+            self._ribs=24
+            self._curse="Suffer"
         else :
-          self.ribs=23
-          self.curse="Pain"
+          self._ribs=23
+          self._curse="Pain"
 
-    def get_name(self):
+    @property
+    def name(self):
+        now = datetime.now()
+        print("Curreent date and time",now)
+        write_file(f_name="log.txt",txt=f"At {now} got name from adam")
+        return self._name
+    
+    @name.setter
+    def name(self,new_name):
+        # data integrity
+        if not isinstance(new_name,str):
+            print("Failed to update name")
+            return
+        #new_name is astring
         now = datetime.now()
         print("Current date and time",now)
-        write_file(f_name="log.txt",txt=f"At {now} got name from adam")
-        return self.name
+        write_file(f_name="log.txt",txt=f"At {now} Name changed from {self._name} to {new_name}")
+        self._name=new_name
+        return new_name
 
     def print_self(self):
         print("----------------------")
-        print("name",self.name)
-        print("gender",self.gender)
-        print("ribs",self.ribs)
-        print("curse",self.curse)
+        print("name",self._name)
+        print("gender",self._gender)
+        print("ribs",self._ribs)
+        print("curse",self._curse)
         print("---------------------")
 
 
@@ -51,9 +65,22 @@ class Human():
 adam=Human(name="adam",gender="Male")
 
 #Getter a property of: <name>:
+#print(adam.name)
+
+adam.name=234
+
+adam.print_self()
+
 # print(adam.name)
+# print(adam.name)
+# #log when somebody
 
-print(adam.get_name())
+# #set is to update
 
-# @property
+adam.name="Joseph"
 
+# # @property
+
+adam.name="Adam"
+
+adam.name="Samson"
