@@ -2,14 +2,14 @@
 #initializer:constructor
 
 #Speical method in a class
-#initializer: method is called whenever the blueprint is used
+#initializer: method is called whenver the blueprint is used
 #To create an object
 #method function is inside a class
 
-#method your create you have to have the self: key worked
+#method your create you have to hhave thhe self: keyworkd
 
 #how to create a class <-->What a class is
-# initialiZer <contracture>
+# initialiZer <constrocture>
 # self key what it is :<this>
 
 from datetime import datetime
@@ -21,8 +21,11 @@ def write_file(f_name,txt):
 
 class Human():
 
+    species="H.sapiens"
+    genus="Homo"
+    count=0
     def __init__(self,gender,name):
-        print("The initializer wass called")
+        print("The initializer was called")
         self._gender=gender
         self._name=name
         if self._gender=="Male":
@@ -31,6 +34,9 @@ class Human():
         else :
           self._ribs=23
           self._curse="Pain"
+
+        # Human.count=Human.count+1
+        self.__class__.count=self.__class__.count+1
 
     @property
     def name(self):
@@ -63,24 +69,10 @@ class Human():
 
 # adam=Human(name="adam",gender="Male") #object from a class
 adam=Human(name="adam",gender="Male")
+eve=Human(name="eve",gender="Female")
 
-#Getter a property of: <name>:
-#print(adam.name)
+print("adam species",adam.species)
+print("eve species",eve.genus)
+print("class property",Human.species)
 
-adam.name=234
-
-adam.print_self()
-
-# print(adam.name)
-# print(adam.name)
-# #log when somebody
-
-# #set is to update
-
-adam.name="Joseph"
-
-# # @property
-
-adam.name="Adam"
-
-adam.name="Samson"
+print("Total humans", Human.count)
