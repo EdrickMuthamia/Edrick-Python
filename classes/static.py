@@ -67,12 +67,21 @@ class Human():
         print("---------------------")
 
 
+    @classmethod
+    def gen_class_into(cls):
+        print("Species",cls.species)
+        print("Species",cls.genus)
+        print("Species",cls.count)
+       
+
+
 # adam=Human(name="adam",gender="Male") #object from a class
 adam=Human(name="adam",gender="Male")
 eve=Human(name="eve",gender="Female")
 
-print("adam species",adam.species)
-print("eve species",eve.genus)
-print("class property",Human.species)
+Human.gen_class_into()
+# print("adam species",adam.species)
+# print("eve species",eve.genus)
+# print("class property",Human.species)
 
-print("Total humans", Human.count)
+# print("Total humans", Human.count)
