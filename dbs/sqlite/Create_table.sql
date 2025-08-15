@@ -1,0 +1,7 @@
+CREATE TABLE students(
+    id INTEGER PRIMARY KEY 
+);
+
+CREATE TABLE parents( 
+    id INTEGER PRIMARY KEY 
+);

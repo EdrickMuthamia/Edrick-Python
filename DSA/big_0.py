@@ -22,10 +22,10 @@ def calculate_sum(n):
 
 def anotherfun():
     sum =0 #a
-    for numb in range (1,n+1):#b,c
+    for numb in range (1,numb+1):#b,c
         print(f"sum ={sum} , numb={numb}")#d
         sum=sum+numb#e
-    print(f"For {n} The sum is {sum}")#f
+    print(f"For {numb} The sum is {sum}")#f
     return sum#g
 
 
