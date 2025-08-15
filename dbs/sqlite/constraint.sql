@@ -1,0 +1,6 @@
+--Contrain your data.
+-- To ensure is ok:<make>
+-- an email String  Unique
+-- Phone numbers Unique:<>
+-- Rules data integrity
+-- Optional
