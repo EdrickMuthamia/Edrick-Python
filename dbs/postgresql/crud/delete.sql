@@ -1,0 +1,5 @@
+-- DELETE FORM <table_name>
+--WHERE <constraint>
+--1 delete by id
+--  DELETE FROM student
+-- WHERE id =2
